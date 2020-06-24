@@ -5,22 +5,29 @@
     box-sizing: border-box;
 }
 
+body{
+    background-image: url('logo-gheimatnama.png');
+    background-size: 320px;
+    background-repeat: no-repeat;
+    background-position: 605px 220px;
+}
+
 .wrapper{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: rgba(0, 0, 0, 0.6);
-    max-width: 550px;
+    max-width: 650px;
     width: 100%;
     padding: 1px;
-    border-radius: 28px;
+    border-radius: 8px;
 }
 
 .wrapper .input{ 
     width: 100%;
     padding: 15px;
-    border-radius: 28px;
+    border-radius: 8px;
     border-color: #e0493e;
     text-align: right;
     background-image: url('search.png');
