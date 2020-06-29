@@ -5,18 +5,6 @@
     box-sizing: border-box;
 }
 
-/*.search-box {
-    position: absolute;
-    border: 3px solid orange;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 850px;
-    width: 100%;
-    padding: 29px;
-   
-}*/
-
 .search-form {
     position: absolute;
     top: 50%;
@@ -26,40 +14,22 @@
     width: 100%;
     padding: 0px;
     border-radius: 10px;
-    border: 2px solid #887472;
+    border: 1px solid #887472;
     margin: 0;
 }
 
-.inp[type="text"]:focus{
-    border: 2px solid #e0493e;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+input[type="text"]:focus{
+    border: 3px solid #e0493e;
     outline: none;
+     -webkit-transition: 0.5s;
+    transition: 0.5s;
 }
-
-/*input:not([type="button"]):not([type="submit"]):not([type="reset"]):focus, select:focus 
-{    
-    border:2px solid red;    
-    outline:none;
-}*/
-
-/* .wrapper {
-    position: absolute;
-    top: 54%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 650px;
-    /* height: 50px; 
-    width: 100%;
-    padding: 1px;
-    border-radius: 8px;
-} */
 
 .search-form .inp{
     display: inline-block;
     border: none;
     max-width: 650px;
-    /* border: 2px solid blue; */
+    border: 3px solid rgb(123, 155, 147);
     width: 100%;
     height: 54px;
     padding-right: 20px;
@@ -67,6 +37,7 @@
     border-radius: 8px;
     text-align: right;
     font-size: 18px;
+    font-family: initial;
     display: flex;
     font-weight: bold;
 }
@@ -81,7 +52,6 @@
     padding: 12px;
     margin-top: 0px;
     cursor: pointer;
-    /* z-index: -1;    */
 }
 
 @media screen and (max-width:650px){
@@ -102,14 +72,9 @@ img.ri {
     transform: translate(-50%, -50%);
 }
 
-/* body, html {
-    direction: rtl;
-} */
-
 .container-down {
     position: absolute;
     top: 94%;
-    left: 0%;
     /* left: 60%; */
     text-align: right;
     background:rgb(180, 195, 190); 
@@ -142,22 +107,12 @@ img.ri {
 .container-down .title2:hover {
     color: rgb(153, 109, 170);
 }
-/* .line {
-    display: block;
-    margin-top: 6em;
-    margin-bottom: -4em;
-    margin-left: 5em;
-    margin-right: 5em;
-    border-style: inset;
-    border-width: 2px;
-} */
 
-/* .line2{
-    display: block;
-    margin-top: 47em;
-    margin-bottom: -47em;
-    margin-left: 5em;
-    margin-right: 5em;
-    border-style: inset;
-    border-width: 2px;
-} */
+.container-up{
+    position: absolute;
+    top: 0;
+    background:rgb(180, 195, 190); 
+    max-width: 1950px;
+    width: 100%;
+    padding: 35px;
+}
