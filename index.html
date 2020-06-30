@@ -2,6 +2,8 @@
 <html>
 
 <head>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,25 +12,41 @@
 </head>
 
 
+
 <body>
-    
-        <form class="search-form" method="get" action="/search/">
-            
-            <div class="search-btn">
-                <img src="search.png" alt="search-icon" style="color: #e0493e" width="30px" height="30px">
-            </div>
-            <input type="text" class="inp" placeholder="...محصول مورد نظر را جستجو کنید">
-           
-        </form>
-    
+
+    <form class="search-form" method="get" action="/search/">
+
+        <div class="search-btn">
+            <img src="search.png" alt="search-icon" style="color: #e0493e" width="30px" height="30px">
+        </div>
+        <input type="text" class="inp" placeholder="...محصول مورد نظر را جستجو کنید">
+
+    </form>
+
     <img class="ri" src="logo-gheimatnama.png" alt="logo-gheimatnama">
     <div class="container-down">
-        
+
         <a class="title" href="#"> درباره ی ما</a>
         <a class="title2" href="#">ورود یا ثبت نام</a>
-        
+
     </div>
-    <div class="container-up"></div> 
+    <div class="container-up">
+        <div class="menu-3-line">
+            <div class="menu-line1"></div>
+            <div class="menu-line2"></div>
+            <div class="menu-line3"></div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $(".menu-3-line").click(function(){
+                $(".menu-3-line").animate({
+                        transform : 'rotate(45deg)'
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
