@@ -63,6 +63,10 @@ input[type="text"]:focus {
     transition: 0.7s;
 }
 
+input[type="text"]{
+    transition: 0.7s;
+}
+
 img.ri {
     position: absolute;
     width: 300px;
